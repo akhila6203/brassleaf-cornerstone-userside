@@ -14,28 +14,7 @@ import {
   useProducts,
 } from "../hooks/useProducts";
 
-/* =========================================================
-   CORNERSTONE HERO IMAGE
 
-   Same image referenced by Cornerstone database.
-========================================================= */
-
-const CORNERSTONE_BANNER =
-  "https://brassleaf.store/cornerstone/wp-content/uploads/2025/02/corner_stone_img.webp";
-
-/* =========================================================
-   CORNERSTONE PAGE CONFIGURATION
-
-   IMPORTANT:
-
-   These product IDs are NOT newly invented frontend data.
-
-   They are the exact query_posts_ids saved inside the
-   uploaded Cornerstone WordPress database for these
-   four pages.
-
-   Backend/API does NOT need to change.
-========================================================= */
 
 const COLLECTIONS = {
   "nursery-to-4th-class-boys-uniform":
@@ -218,7 +197,7 @@ export default function UniformCollection({
           bg-slate-100
         "
       >
-        <img
+        {/* <img
           src={CORNERSTONE_BANNER}
           alt="Cornerstone School"
           className="
@@ -235,7 +214,7 @@ export default function UniformCollection({
 
             xl:h-[455px]
           "
-        />
+        /> */}
       </section>
 
       {/* =====================================================
