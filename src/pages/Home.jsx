@@ -1,7 +1,14 @@
 import { Link } from "react-router-dom";
 
+// const CORNERSTONE_BANNER =
+//   "https://brassleaf.store/cornerstone/wp-content/uploads/2025/02/corner_stone_img.webp";
+const UPLOAD_BASE_URL =
+  import.meta.env.VITE_UPLOAD_BASE_URL ||
+  "http://localhost:4000/uploads";
+
 const CORNERSTONE_BANNER =
-  "https://brassleaf.store/cornerstone/wp-content/uploads/2025/02/corner_stone_img.webp";
+  `${UPLOAD_BASE_URL}/2025/02/corner_stone_img.webp`;
+  
 
 const uniformGroups = [
   {
